@@ -2,14 +2,15 @@ import React,{useState,useEffect} from 'react'
 import Skeleton,{SkeletonTheme} from 'react-loading-skeleton'
 import './Card.css'
 import { Link  } from 'react-router-dom'
+
 const Card = ({movie}) => {
     
     const [isLoading,setIsLoading]=useState(true)
 
-    useEffect(()=>{
-        setTimeout(()=>{
+    useEffect(() => {
+        setTimeout(() => {
             setIsLoading(false)
-        },1500)
+        }, 1500)
     },[])
 
   return (
